@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JQuery Learning</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+    })
+    </script>
+  </head>
+
+    <body>
+
+      <script>
+      $(document).ready(function(){
+          $("button").click(function(){
+              alert("Value: " + $("#getName").val());
+          });
+      });
+      </script>
+
+      <p>Name: <input type="text" id="getName" value="Enter Name"></p>
+
+      <button>Show Value</button>
+
+    <p>----------------------------</p>
+
+    <button>Click to hide txt below</button>
+    <h1 id="hideh1">JQuery Learning 1</h1>
+
+    <h2>JQuery Learning 2</h2>
+
+    <h3 class="hideh3">JQuery Learning 3</h3>
+
+    <p>A paragraph of test</p>
+
+    <script>
+    //hide all specific h2 tags for example
+    $("h2").hide();
+
+    //hide tag with speicif ID uses #
+    $(document).ready(function(){
+      $("button").click(function(){
+          $("#hideh1").hide();
+      });
+    });
+
+
+    //hids all tags assigned the specific class uses .
+    $(".hideh3").hide();
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+const score = {visitors: 0, home: 0};
+console.log("visitors: " + score.visitors);
+// This is okay
+score.visitors = 1;
+console.log("visitors: " + score.visitors);
+// Code below isn't allowed because visitors & home are assigned as "const"
+// thus only their properties can be changed as noted above ^
+//score = {visitors: 1, home: 1};
+</script>
+
+<p id="mapexample"></p>
+<button onclick="myFunction()">Map Example</button>
+<script>
+//map example
+var numbers = [4, 9, 16, 25];
+
+function myFunction() {
+    x = document.getElementById("mapexample")
+    x.innerHTML = numbers.map(Math.sqrt);
+}
+</script>
+
+<p id="kidname"></p>
+
+<script>
+var kids_fname = [
+  {name: 'Sebastien', status: 'brother'},
+  {name: 'Saria',     status: 'me'},
+  {name: 'Dominic',   status: 'friend'},
+  {name: 'Melissa',   status: 'best_friend'},
+  {name: 'Valica',    status: 'best_friend'},
+  {name: 'Tracy',     status: 'friend'},
+  {name: 'Libby',     status: 'friend'},
+  {name: 'Elice',     status: 'best_friend'},
+  {name: 'Simon',     status: 'friend'}
+]
+
+
+console.log(JSON.stringify(kids_fname));
+
+var count = kids_fname.length;
+var bestfriendlist = kids_fname.filter(function(kids_fname){
+  return kids_fname.status === 'best_friend'
+})
+
+var friendlist = kids_fname.filter(function(kids_fname){
+    return kids_fname.status != 'me'
+})
+
+var me = kids_fname.filter(function(kids_fname){
+    return kids_fname.status === 'me'
+})
+
+console.log('valica' in kids_fname);
+console.log(friendlist);
+console.log(friendlist.length);
+console.log(bestfriendlist);
+console.log(me);
+
+document.write("<p>Hi, my name is " + me[0].name + " and my best friends names are: " + bestfriendlist + ".</p>");
+document.write("<p>I have " + (count - 1) + " friends in my class:<br> " + friendlist + "</p>");
+
+</script>
+
+<script>
+//Chapter 3, Exercise "Minimum"
+function findMin(a,b){
+var min_num;
+  if (a>b){
+    min_num = b;
+  } else {
+    min_num = a;
+  }
+  return min_num;
+}
+
+var test = findMin(9, 6);
+console.log(test);
+</script>
+
+<script>
+/*
+Recursive Function Example Page 50
+Starting from the number 1 and repeatedly either
+adding 5 or multiplying by 3, an infinite set of numbers can be produced. How
+would you write a function that, given a number, tries to find a sequence of
+such additions and multiplications that produces that number?
+For example, the number 13 could be reached by first multiplying by 3 and
+then adding 5 twice, whereas the number 15 cannot be reached at all.
+Here is a recursive solution:
+*/
+
+var a = 24;
+
+function findSolution(target) {
+  function find(current, history) {
+    if (current == target) {
+      return history;
+    } else if (current > target) {
+      return null;
+    } else {
+      return find(current + 5, `(${history} + 5)`) ||
+
+find(current * 3, `(${history} * 3)`);
+
+  }
+}
+return find(1, "1");
+}
+
+console.log("Recursive Example: Solution " + a + " is " + findSolution(a));
+
+</script>
+
+<script>
+/*
+In the example, multiplier is called and creates an environment in which its
+factor parameter is bound to 2. The function value it returns, which is stored
+in twice, remembers this environment. So when that is called, it multiplies its
+argument by 2. (Page 48)
+
+Extra Example on Closure
+https://www.youtube.com/watch?v=71AtaJpJHw0
+*/
+
+function multiplier(factor) {
+return number => number * factor;
+}
+let twice = multiplier(2);
+console.log(twice(5));
+</script>
+
+
+<script>
+//Example of returning values and Abstraction
+
+//Simple add function giving 2 args
+function add(x,y){
+  return x+y;
+}
+
+//Calls add function to add "a" input "b" number of times and return
+function mult(a,b){
+  var toReturn = 0;
+  for(counter=0;counter<b;counter++){
+    toReturn = add(toReturn, a);
+  }
+  return toReturn;
+}
+
+var answer = mult(9,9);
+//alert(answer);
+</script>
+
+
+<script>
+var list = [1, 2, 5, 4, 9, 8, 7, 3, 6];
+
+function callback(list){
+  var newList =[];
+
+  for(var i=0; i<list.length; i++){
+    if (list[i]>5){
+        newList.push(list[i]);
+    };
+  };
+return newList;
+};
+
+function filter(list, callback){
+  return callback(list);
+};
+
+var filtered = filter(list, callback);
+console.log(filtered);
+</script>
+
+<script>
+var total;
+
+function taxcalc() {
+  var sale = document.forms["taxcalcform"]["sale"].value;
+  total = sale * 1.15;
+  document.write("Your total is : $" + total.toFixed(2) + " tax included.");
+  return total;
+};
+
+</script>
+
+<form name="taxcalcform" action="file:///C:/downloads/IvanCoding/functions.html" onsubmit="return taxcalc(sale)" method="post">
+Amount: <input name="sale" type="text">
+<input type="submit" value="Enter Sale Amount">
+</form>
+
+</body>
+</html>

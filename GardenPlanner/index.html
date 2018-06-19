@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Garden Planner</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts\jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+
+    <script>
+
+    var json = require('./vegetables.json'); //vegetables object
+    console.log(json);
+    obj = JSON.parse(vegetables);
+    document.getElementById("vegetables").innerHTML =
+    obj.vegetables[0];
+    </script>
+
+  <table>
+    <tr>
+      <td>Vegetable Name: </td>
+      <td id="vegetables"></td>
+    </tr>
+  </table>
+
+  </body>
+
+</html>

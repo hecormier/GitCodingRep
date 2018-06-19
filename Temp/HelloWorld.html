@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="farm"><br><br></p>
+
+<script>
+var farminfo = {
+  farmname      : "Meli-Melo Farm",
+  certstatus    : "Certified Organic",
+  address       : "2558 Route 515, Sainte-Marie-de-Kent, NB",
+  completeinfo  : function() {
+    return this.farmname + "<br>" + this.certstatus + "<br>" + this.address;
+  }
+};
+document.getElementById("farm").innerHTML = farminfo.completeinfo();
+</script>
+
+<script>
+
+</script>
+
+<script>
+// # Pyramid Excersise
+var text = "";
+var i;
+for (i =0; i < 7; i++) {
+  console.log(text = text + "#");
+};
+</script>
+
+<script>
+// Chess Board Excersise
+let size = 8;
+let board = "";
+for (let y = 0; y < size; y++) {
+   for (let x = 0; x < size; x++) {
+       if ((x + y) % 2 == 0) {board += " ";}
+       else {board += "#";}
+       }
+   board += "\n";}
+console.log(board);
+</script>
+
+
+<script>
+/*
+// Fizz Buzz Excersise
+var i;
+
+for (i =0; i <= 100; i++) {
+  if ((i % 3 == 0) && (i % 5 == 0)) {
+    console.log("FizzBuzz");
+  } else if (i % 3 == 0) {
+    console.log("Fizz");
+  } else if ((i % 3 != 0) && (i % 5 == 0)) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+};
+*/
+</script>
+
+</body>
+</html>
