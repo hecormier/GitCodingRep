@@ -1,8 +1,58 @@
-Veg,Name,Seed Vendor,# Days in Cell,Maturity Date,Unit,Yield per Bed,Row ft,Spacing,# Plants in Row
-Peppers,Sweet Sunrise Organic - YL 78 days (V 40125),Veseys,60,78,fruit,,10,12,1
-Tomatoes,Pink Boar (HM 3059) (Ind),High Mowing,60,75,lb,,10,12,1
-Tomatoes,Purple Tomatillo (HM 3182) (Semi-Ind),High Mowing,60,75,lb,,5,12,1
-Bunch Onions,Long White Tokyo (V 16550),Veseys,45,75,bunch,85,5,6,5
-Tomatoes,Damsel F1 (HM 3008) (Ind),High Mowing,60,73,lb,,10,12,1
-Tomatoes,Bumble Bee Mix - Cherry (V 18916),Veseys,60,70,,,10,9,1
-Celery,Tango (V 13990),Veseys,60,90,Each,,5,6,3
+ID,Veg,Name,Seed Vendor,# Days in Cell,Maturity Date,Unit,Yield per Bed,Row ft,Spacing,# Plants in Row
+1,Peppers,Sweet Sunrise Organic - YL 78 days (V 40125),Veseys,60,78,fruit,,10,12,1
+2,Tomatoes,Pink Boar (HM 3059) (Ind),High Mowing,60,75,lb,,10,12,1
+3,Tomatoes,Purple Tomatillo (HM 3182) (Semi-Ind),High Mowing,60,75,lb,,5,12,1
+4,Bunch Onions,Long White Tokyo (V 16550),Veseys,45,75,bunch,85,5,6,5
+5,Tomatoes,Damsel F1 (HM 3008) (Ind),High Mowing,60,73,lb,,10,12,1
+6,Tomatoes,Bumble Bee Mix - Cherry (V 18916),Veseys,60,70,,,10,9,1
+7,Celery,Tango (V 13990),Veseys,60,90,Each,,5,6,3
+8,Peppers,New Ace (V 17430),Veseys,60,65,fruit,,10,12,1
+9,Peppers,Purple Star (V 17350),Veseys,60,65,fruit,,10,12,1
+10,Tomatoes Cherry,Cherry Bomb Organic (V 40258),Veseys,60,65,lb,,10,9,1
+11,Peppers,Red Knight XR3 - RED 85 days (V 17555),Veseys,60,85,fruit,,10,12,1
+12,Tomatoes,Amish Paste (HM 3020) (Ind),High Mowing,60,80,lb,,10,12,1
+13,Leeks,Runner Organic (V 40067),Veseys,65,100,bunch (6),50,10,6,3
+14,Beets,Merlin Organic (V 40080),Veseys,25,55,bunch (4),80,10,6,3
+15,Kohlrabi,Kolibri (V 13815),Veseys,45,60,bunch,70,10,8,3
+16,Celery,Tall Utah (HM 2341),High Mowing,60,100,Each,,5,6,3
+17,Tomatoes,Defiant Organic - det (V 40255),Veseys,60,70,lb,,10,12,1
+18,Cabbage,Emiko Organic Chinese (V 40275),Veseys,30,65,head,30,10,18,2
+19,Kale,Lacinato (Dinosaur) (HM 2520),High Mowing,30,45,bunch,75,10,12,3
+20,Broccoli,Blue Wind Broccoli (V 12111),Veseys,30,50,head,60,10,18,2
+21,Spinach,Regiment Organic (V 40875),Veseys,21,45,10oz,24,10,6,4
+22,Swiss Chard,Rainbow Organic (V 40570),Veseys,30,60,each,,5,12,3
+23,Anise/Fennel,Orion (V 13970),Veseys,30,80,Each,50,5,6,2
+24,Beets,Avalanch White (V 12055),Veseys,25,55,bunch (4),80,10,6,3
+25,Cauliflower,Veronica - GREEN Spiral (V 12880),Veseys,30,85,head,30,10,18,2
+26,Herbs,Sweet Basil (V 14880),Veseys,25,75,bunch,?,5,,
+27,Herbs,Freddy Red Basil (V 14866),Veseys,25,75,bunch,?,5,,
+28,Kale,Curly Roja (HM),High Mowing,30,55,bunch,75,10,12,3
+29,Salanova,Green\Red Butter (JS 3056JP\3057JP),Johnny's,30,55,head,35,5,10,4
+30,Salanova,Green\Red Crisp (JS 3054JP\3055JP),Johnny's,30,55,head,35,5,10,4
+31,Cauliflower,Skywalker Organic (V 40475),Veseys,30,75,head,30,10,18,2
+32,Eggplant,Michal Organic Eggplant (V 40055),Veseys,50,70,each,16,10,18,1
+33,Bunch Onions,Deep Purple Organic (JS 491G),Johnny's,45,60,bunch,85,5,6,5
+34,Cucumbers,Marketmore-76 Organic (V 40290),Veseys,15,65,fruit,,10,18,1
+35,Zucchini,Goldy Organic - YELLOW (V 40555),Veseys,15,47,fruit,,10,24,1
+36,Zucchini,Anton Organic - GREEN (V 40014),Veseys,15,47,fruit,,10,24,1
+37,Melon,Pixie (V 15635),Veseys,15,75,fruit,,25,18,1
+38,Cabbage,Buscaro Organic (V 40672),Veseys,30,95,head,30,10,18,2
+39,Spinach,Red Kitten (JS 3516),Johnny's,21,34,10oz,24,10,6,4
+40,Kale,Ripbor (V 40045),Veseys,30,65,bunch,75,10,12,3
+41,Broccoli,Belstar Organic (V 40470),Veseys,30,70,head,60,10,18,2
+42,Cabbage,Farao Organic (V 40671),Veseys,30,47,head,60,10,18,2
+43,Cauliflower,Graffiti - PURPLE (V 12900),Veseys,30,80,head,30,10,18,2
+44,Zucchini,Sunburst Patty Pan - YELLOW (V 18570),Veseys,15,50,fruit,,10,24,1
+45,Brussels Sprouts,Brussels Sprouts (V),Veseys,15,50,fruit,,10,24,1
+46,Carrot,Rainbow (V 12770),Veseys,DS,75,bunch (12),90,10,1.25,5
+47,Bush Beans,Gold Rush Organic (V 40600),Veseys,DS,55,lb,,25,12,2
+48,Snow Peas,Oregon Sugar Organic Peas (V 40500),Veseys,DS,60,lb,25,40,0.5,1
+49,Onions,R&N Store,R&N Store,DS,100,fruit,,10,10,3
+50,Bush Beans,Provider Organic (V 40200),Veseys,DS,50,lb,60,25,12,2
+51,Onions,Red Onion,Veseys,DS,116,fruit,,10,10,3
+52,Turnip,Hakurei (JS 706),Johnny's,DS,38,bunch (4),,10,1.25,5
+53,Carrot,Yaya Organic (V 40420),Veseys,DS,65,bunch (12),90,10,1.25,5
+54,Shallots,Conservor (V 40950),Veseys,DS,105,fruit,,10,10,3
+55,Radish,Easter Egg (V 18260),Veseys,DS,28,bunch (12),150,5,1.25,5
+56,Carrot,Napoli Organic (V 40530),Veseys,DS,56,bunch (12),90,10,1.25,5
+57,Mustard Green,Scarlet Frills (V 40632),Veseys,DS,37,bunch,35,5,1.25,5

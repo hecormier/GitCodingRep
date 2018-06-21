@@ -2,29 +2,17 @@
 <html>
 
   <head>
+    <meta charset="utf-8"/>
     <title>Garden Planner</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="scripts\jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
 
   <body>
 
-    <script>
-
-    var json = require('./vegetables.json'); //vegetables object
-    console.log(json);
-    obj = JSON.parse(vegetables);
-    document.getElementById("vegetables").innerHTML =
-    obj.vegetables[0];
-    </script>
-
-  <table>
-    <tr>
-      <td>Vegetable Name: </td>
-      <td id="vegetables"></td>
-    </tr>
-  </table>
+    <div id="vegList"></div>
 
   </body>
-
+<script src="scripts/main.js"></script>
 </html>
