@@ -11,14 +11,15 @@ xmlhttp.send();
 function renderVegList(vegList){
 var htmlString = "";
 
-htmlString += "<form action=''><select name='selVegetable'>";
+htmlString += "<form><select name='SelVegetable'>";
+
   for (i = 0; i < vegList.length; i++) {
     // console.log(JSON.stringify(vegList[i].Veg), JSON.stringify(vegList[i].Name)); //Test Output
     htmlString += "<option value='" + JSON.stringify(vegList[i].ID) + "'>" +
-    JSON.stringify(vegList[i].Veg) + " - " + JSON.stringify(vegList[i].Name) +
-    "</option>";
+    JSON.stringify(vegList[i].Veg) + " - " + JSON.stringify(vegList[i].Name);
   }
-htmlString += "</select><br><br><input type='submit'></form>";
+
+htmlString += "</select></form>";
 //console.log(htmlString); //Test Output
 document.getElementById("vegList").innerHTML = htmlString;
 }
