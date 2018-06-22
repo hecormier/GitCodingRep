@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Dynamic Lists</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <body>
+
+    <h1>My favorite fruits</h1>
+
+    <ol id="fruitList">
+    </ol>
+
+    <p>
+      <input placeholder="Add New Fruit Here" type="text" name="fruitName" id="newFruit"/>
+      <button onclick="addFruit();">Add Fruit</button>
+    </p>
+
+    <script>
+    var fruits = ["Apple", "Orange", "Banana", "Pinapple"];
+    var list = $("#fruitList") //
+
+    $.each(fruits,function(index,value){
+      $("<li/>").text(value).appendTo(list);
+    })
+
+    function addFruit(){
+      var newFruit = document.getElementById("newFruit").value;
+
+      fruits.push(newFruit);
+
+        $("<li/>").text(newFruit).appendTo(list);
+
+      console.log(newFruit);
+      console.log(fruits);
+    }
+
+    console.log(fruits);
+    </script>
+
+  </body>
+
+</html>
